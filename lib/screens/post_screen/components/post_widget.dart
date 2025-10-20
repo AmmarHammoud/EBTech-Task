@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PostWidget extends StatelessWidget {
   const PostWidget({super.key});
@@ -25,8 +26,8 @@ class PostWidget extends StatelessWidget {
                     Text('October 13, 2025 at 06:45 PM'),
                   ],
                 ),
-                IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
-                IconButton(onPressed: () {}, icon: Icon(Icons.delete)),
+                IconButton(onPressed: () {}, icon: Icon(FontAwesomeIcons.penToSquare)),
+                IconButton(onPressed: () {}, icon: Icon(FontAwesomeIcons.trashCan, color: Colors.red,)),
               ],
             ),
             SizedBox(height: 10),
