@@ -2,10 +2,8 @@ import 'package:ebtech_task/screens/home_screen/provider/home_screen_provider.da
 import 'package:ebtech_task/screens/home_screen/provider/states.dart';
 import 'package:ebtech_task/screens/post_screen/components/post_widget.dart';
 import 'package:ebtech_task/shared/components/my_loading_indicator.dart';
-import 'package:ebtech_task/shared/show_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:toastification/toastification.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -15,6 +13,13 @@ class HomeScreen extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => HomeScreenProvider()..getPosts(),
       child: Scaffold(
+        appBar: AppBar(
+          title: Text('Home'),
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(1),
+            child: Container(color: Colors.grey.shade300, height: 1),
+          ),
+        ),
         body: Padding(
           padding: EdgeInsets.all(17),
           child: Consumer<HomeScreenProvider>(
