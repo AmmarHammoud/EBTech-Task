@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           bodyLarge: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           bodyMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           bodySmall: TextStyle(fontSize: 14, color: Colors.grey[600]),
-          labelSmall: TextStyle(fontSize: 12, color: Colors.grey[600]),
+          labelSmall: TextStyle(fontSize: 9.5, color: Colors.grey[600]),
         ),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
