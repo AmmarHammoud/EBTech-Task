@@ -2,9 +2,12 @@ import 'package:ebtech_task/screens/post_screen/components/comment_widget.dart';
 import 'package:ebtech_task/screens/post_screen/components/post_widget.dart';
 import 'package:ebtech_task/shared/constants.dart';
 import 'package:flutter/material.dart';
+import '../../models/post_model.dart';
 
 class PostScreen extends StatelessWidget {
-  const PostScreen({super.key});
+  const PostScreen({super.key, required this.postModel});
+
+  final PostModel postModel;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +29,7 @@ class PostScreen extends StatelessWidget {
         padding: EdgeInsets.all(10),
         child: Column(
           children: [
-            PostWidget(),
+            PostWidget(postModel: postModel),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -53,7 +56,14 @@ class PostScreen extends StatelessWidget {
                 ),
               ],
             ),
-            CommentWidget(),
+            Expanded(
+              child: ListView.separated(
+                shrinkWrap: true,
+                itemBuilder: (context, idx) => CommentWidget(commentModel: postModel.comments[idx],),
+                separatorBuilder: (context, idx) => SizedBox(height: 15),
+                itemCount: postModel.comments.length,
+              ),
+            ),
           ],
         ),
       ),

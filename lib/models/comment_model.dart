@@ -10,7 +10,7 @@ class CommentModel {
     commenterName = json['commenter_name'];
     commenterAvatar = json['commenter_avatar'];
     content = json['content'];
-    time = json['time'];
+    time = DateTime.parse(json['created_at']).toLocal();
   }
 
   Map<String, dynamic> toJson() => {

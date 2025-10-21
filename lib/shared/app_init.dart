@@ -1,8 +1,11 @@
+import 'package:ebtech_task/shared/dio_helper/dio_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:timeago/timeago.dart' as timeago;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 abstract class AppInit {
-  static init() {
+  static init() async {
     WidgetsFlutterBinding.ensureInitialized();
+    await dotenv.load(fileName: "assets/.env");
+    await DioHelper.init();
   }
 }

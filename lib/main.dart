@@ -1,9 +1,10 @@
+import 'package:ebtech_task/screens/home_screen/home_screen.dart';
 import 'package:ebtech_task/screens/post_screen/post_screen.dart';
 import 'package:ebtech_task/shared/app_init.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  AppInit.init();
+void main() async {
+  await AppInit.init();
   runApp(const MyApp());
 }
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         ),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const PostScreen(),
+      home: const HomeScreen(),
     );
   }
 }
