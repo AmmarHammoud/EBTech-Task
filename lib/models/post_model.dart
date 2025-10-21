@@ -14,7 +14,7 @@ class PostModel {
     title = json['title'];
     content = json['content'];
     commentsCount = json['comment_count'];
-    time = DateTime.parse(json['created_at']);
+    time = DateTime.parse(json['created_at']).toLocal();
   }
 
   Map<String, dynamic> toJson() => {
