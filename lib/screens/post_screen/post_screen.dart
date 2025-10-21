@@ -60,7 +60,7 @@ class PostScreen extends StatelessWidget {
               child: ListView.separated(
                 shrinkWrap: true,
                 itemBuilder: (context, idx) => CommentWidget(commentModel: postModel.comments[idx],),
-                separatorBuilder: (context, idx) => SizedBox(height: 15),
+                separatorBuilder: (context, idx) => SizedBox(height: MediaQuery.of(context).size.height * 0.01),
                 itemCount: postModel.comments.length,
               ),
             ),

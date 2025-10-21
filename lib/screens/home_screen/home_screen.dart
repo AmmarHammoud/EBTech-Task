@@ -29,14 +29,11 @@ class HomeScreen extends StatelessWidget {
               if (state is HomeScreenLoadingState) {
                 return MyLoadingIndicator();
               }
-              if(state is HomeScreenErrorState){
-                  // showToast(context: context, text: provider.state.error, type: ToastificationType.error);
-              }
               if (provider.state is HomeScreenSuccessState) {
                 return ListView.separated(
                   itemBuilder: (context, idx) =>
                       PostWidget(postModel: provider.posts[idx]),
-                  separatorBuilder: (context, idx) => SizedBox(height: 15),
+                  separatorBuilder: (context, idx) => SizedBox(height: MediaQuery.of(context).size.height * 0.02),
                   itemCount: provider.posts.length,
                 );
               }
