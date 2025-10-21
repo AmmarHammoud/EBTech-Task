@@ -3,25 +3,25 @@
     {
       "user_id": 1,
       "name": "Mike Chen",
-      "avatar_url": "https://avatar.iran.liara.run/public/34",
+      "avatar_url": "https://example.com/avatar/mike_chen.jpg",
       "email": "mike.chen@example.com"
     },
     {
       "user_id": 2,
       "name": "Pat Wilson",
-      "avatar_url": "https://avatar.iran.liara.run/public/34",
+      "avatar_url": "https://example.com/avatar/pat_wilson.jpg",
       "email": "pat.wilson@example.com"
     },
     {
       "user_id": 3,
       "name": "Sophia Turner",
-      "avatar_url": "https://avatar.iran.liara.run/public/3",
+      "avatar_url": "https://example.com/avatar/sophia_turner.jpg",
       "email": "sophia.turner@example.com"
     },
     {
       "user_id": 4,
       "name": "Liam Roberts",
-      "avatar_url": "https://avatar.iran.liara.run/public/33",
+      "avatar_url": "https://example.com/avatar/liam_roberts.jpg",
       "email": "liam.roberts@example.com"
     }
   ],
