@@ -30,6 +30,8 @@
     {
       "post_id": 101,
       "user_id": 1,
+      "author_name": "Mike Chen",
+      "author_avatar": "https://example.com/avatar/mike_chen.jpg",
       "title": "The Future of Web Development",
       "content": "Web development is evolving rapidly with new frameworks and tools emerging every day. Staying up to date is crucial for modern developers.",
       "created_at": "2025-10-13T18:45:00Z",
@@ -39,6 +41,8 @@
     {
       "post_id": 102,
       "user_id": 3,
+      "author_name": "Sophia Turner",
+      "author_avatar": "https://example.com/avatar/sophia_turner.jpg",
       "title": "Designing for Accessibility",
       "content": "Accessibility should never be an afterthought. Inclusive design ensures everyone can enjoy your app, regardless of ability.",
       "created_at": "2025-10-15T10:30:00Z",
@@ -48,6 +52,8 @@
     {
       "post_id": 103,
       "user_id": 4,
+      "author_name": "Liam Roberts",
+      "author_avatar": "https://example.com/avatar/liam_roberts.jpg",
       "title": "AI Tools for Developers in 2025",
       "content": "AI is transforming how developers code, debug, and deploy. From Copilot to ChatGPT, the tools are only getting smarter.",
       "created_at": "2025-10-18T09:15:00Z",
